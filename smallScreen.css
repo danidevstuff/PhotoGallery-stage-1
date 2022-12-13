@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+}
+#navBar{
+    display: flex;
+    background-color: rgba(243, 88, 71, 0.944);
+    font-family: 'Pacifico',serif;
+    height:40px;
+}
+#Links{
+    width:50%;
+    margin:0 auto;
+    padding:5px;
+}
+#Links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Links ul li a{
+    text-decoration: none;
+    color:white;
+}
+#Name{
+    color:white;
+    padding:5px;
+}
+#Header{
+    width:100%;
+    height:50vh;
+    background-color: rgba(236, 64, 45, 0.938);
+    font-family: 'Pacifico',serif;
+}
+#Tags{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Tags span{
+    color:white;
+}
+#Tags .title{
+    font-size:40px;
+}
+#Tags .tagLine{
+    font-size:20px;
+}
+#slideShow{
+    width:75%;
+    height:40vh;
+    overflow: hidden;
+    margin:0 auto;
+    margin-top:-20vh;
+    border:5px solid white;
+    border-radius: 5px;
+}
+#wrapper{
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+}
+#wrapper img{
+    width:100%;
+}
